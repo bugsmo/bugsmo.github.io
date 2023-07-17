@@ -1,14 +1,14 @@
 // set your global feed options - override in page frontmatter `feed`
 const feed_options = {
-  canonical_base: 'https://wiki.eryajf.net',
+  canonical_base: 'https://wiki.moweilong.com/',
   count: 5000,
 };
 
 const autometa_options = {
   site: {
-    name: 'Eryajf',
+    name: 'Bugs',
   },
-  canonical_base: 'https://wiki.eryajf.net',
+  canonical_base: 'https://wiki.moweilong.com/',
 };
 
 // 插件配置
@@ -71,10 +71,10 @@ module.exports = [
     "dynamic-title",
     {
       showIcon:
-        "https://wiki.eryajf.net/img/favicon.ico",
+        "https://wiki.moweilong.com/img/favicon.ico",
       showText: "ヾ(≧▽≦*)o欢迎回来！",
       hideIcon:
-        "https://wiki.eryajf.net/img/favicon.ico",
+        "https://wiki.moweilong.com/img/favicon.ico",
       hideText: "ಥ_ಥ不要走呀！",
       recoverTime: 2000, //  持续时间
     },
@@ -136,7 +136,7 @@ module.exports = [
   'vuepress-plugin-mermaidjs',
   [
     'sitemap', {
-      hostname: 'https://wiki.eryajf.net',
+      hostname: 'https://wiki.moweilong.com',
       exclude: ["/404.html"],
     },
   ],

@@ -9,12 +9,12 @@ module.exports = {
         font-weight: bold;
         margin: 0 0 8px 0;
       ">公众号</p>
-      <img src="http://t.eryajf.net/imgs/2023/02/712e2287455b9a0c.png"  style="width:100%;" />
       <p>
       运维艺术，扫码或者搜索关注
       </p>
       </div>`,
-
+      // <img src="http://t.eryajf.net/imgs/2023/02/712e2287455b9a0c.png"  style="width:100%;" />
+      
       // <img src="https://camo.githubusercontent.com/82291b0fe831bfc6781e07fc5090cbd0a8b912bb8b8d4fec0696c881834f81ac/68747470733a2f2f70726f626f742e6d656469612f394575424971676170492e676966" width="100%"  height="3">
       // <a href="https://item.m.jd.com/product/13996910.html?utm_user=plusmember&gx=RnAohDtYYTzfw5kc49UzFw&gxd=RnAoxzRebWDYyphH-dEkWp8WgYz4W6E&ad_od=share&utm_source=androidapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=Wxfriends" target="_blank">
       //     <img src="https://pic6.58cdn.com.cn/nowater/webim/big/n_v20068e773520d46d99902ee12ec1c42d3.png" alt="宣传图" height="320" width="100%">
