@@ -17,7 +17,7 @@ sleep 5
 
 # 刷新
 doge flush path -p "https://wiki.moweilong.com/"
-doge flush path -p "http://comment.moweilong.com:8080/"
+doge flush path -p "https://comment.moweilong.com/"
 
 # 更新检索的索引数据
 # ssh -p 2023 root@8.136.215.57 'bash /data/docker/meilisearch/scraper/do.sh'

@@ -162,7 +162,7 @@ module.exports = [
       {
         choosen: 'artalk',
         options: {
-            server: 'http://comment.moweilong.com:8080',
+            server: 'https://comment.moweilong.com',
             site: '老莫不吃鱼',
             disableEmotion: false,
             disablePreview: false,
