@@ -162,8 +162,8 @@ module.exports = [
       {
         choosen: 'artalk',
         options: {
-            server: 'https://comment.eryajf.net',
-            site: '二丫讲梵',
+            server: 'http://comment.moweilong.com:8080',
+            site: '老莫不吃鱼',
             disableEmotion: false,
             disablePreview: false,
             disablePicture: true
