@@ -58,12 +58,6 @@ module.exports = [
       { text: 'Golang编程技巧', link: '/go-code/'},
     ]
   },
-  { text: '周刊', link: '/weekly/',
-    items: [
-      { text: '学习周刊', link: '/learning-weekly/'},
-      { text: 'Obsidian插件周刊', link: '/obsidian-weekly/'},
-    ]
-  },
   { text: '关于', link: '/about/' },
   { text: '友链', link: '/friends/' },
   // { text: '推广', link: '/geektime/' },
