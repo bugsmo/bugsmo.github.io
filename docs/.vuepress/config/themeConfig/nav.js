@@ -51,11 +51,10 @@ module.exports = [
   },
   { text: '编程',link: '/code/',
     items: [
-      { text: 'Shell', link: '/shell/'},
-      { text: '前端实践', link: '/front-code/'},
-      { text: 'Vue学习笔记', link: '/vue-learn/'},
-      { text: 'Golang学习笔记', link: '/go-learn/'},
-      { text: 'Golang编程技巧', link: '/go-code/'},
+      // { text: 'Shell', link: '/shell/'},
+      // { text: '前端实践', link: '/front-code/'},
+      // { text: 'Vue学习笔记', link: '/vue-learn/'},
+      { text: 'Golang', link: '/go-learn/'},
     ]
   },
   { text: '关于', link: '/about/' },
