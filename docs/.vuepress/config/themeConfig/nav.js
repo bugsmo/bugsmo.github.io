@@ -2,6 +2,9 @@
 module.exports = [
   { text: '首页', link: '/' },
   { text: '运维',link: '/ops/',
+    items: [
+      { text: '测试',link: '/ops/test/' },
+    ]
   },
   { text: '编程',link: '/code/',
   },
