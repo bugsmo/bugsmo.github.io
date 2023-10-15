@@ -12,10 +12,6 @@ features: # 可选的
     details: 运维观止,奇技淫巧,迎刃而解
     link: /ops/ # 可选
     # imgUrl: /img/ops.png # 可选
-  - title: 生活
-    details: 日常随思,家人物语,生活感悟
-    link: /life/
-    # imgUrl: /img/life.png
   - title: 编程
     details: 编程世界,运维开发,全沾艺人
     link: /code/
@@ -27,7 +23,8 @@ features: # 可选的
 
 ::: v-pre
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="轮播展示" src="https://wiki.eryajf.net/lunbo/lunbo.html"></iframe>
+<!-- <iframe height="400" style="width: 100%;" scrolling="no" title="轮播展示" src="https://wiki.eryajf.net/lunbo/lunbo.html"></iframe> -->
+
 :::
 
 ::: center

@@ -7,11 +7,10 @@ module.exports = [
     ]
   },
   { text: '编程',link: '/code/',
+    items: [
+      { text: 'Golang学习笔记', link: '/go-learn/'},
+    ]
   },
   { text: '关于', link: '/about/' },
   { text: '友链', link: '/friends/' },
-  {
-    text: '页面',
-    link: '/nav/',
-  },
 ]

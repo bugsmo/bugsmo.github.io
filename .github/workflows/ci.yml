@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: 16
       - run: |
-          npm install -f
+          npm install
           npm run build
 
       - name: Deploy 🚀
