@@ -1,3 +1,0 @@
-Sitemap: https://wiki.moweilong.com/sitemap.xml
-
-User-agent: *
