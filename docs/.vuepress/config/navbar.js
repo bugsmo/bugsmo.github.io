@@ -29,12 +29,12 @@ export default [
         link: '/utils/',
         activeMatch: '^/utils/'
     },
-    // {
-    //     text: '导航页',
-    //     icon: 'neo-zuojiantou',
-    //     link: '/nav-page/',
-    //     activeMatch: '^/nav-page/'
-    // },
+    {
+        text: '导航页',
+        icon: 'neo-zuojiantou',
+        link: '/nav-page/',
+        activeMatch: '^/nav-page/'
+    },
     // {
     //     text: '影视推荐',
     //     link: '/movies/',

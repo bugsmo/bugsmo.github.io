@@ -45,7 +45,7 @@ jobs:
       - name: Generate CNAME
         run: cd ./docs/.vuepress/dist && echo 'wiki.moweilong.com' > CNAME
 
-      - name: Generate nojekyll
+      - name: Generate moweilong
         run: cd ./docs/.vuepress/dist && echo > .moweilong
 
       # 查看 workflow 的文档来获取更多信息
