@@ -1,3 +1,3 @@
-# Hello VuePress
-
-test content
+---
+home: true
+---
