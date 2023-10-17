@@ -41,7 +41,7 @@ export default neoTheme({
     homeHeaderInfo: {
         name: '老莫不吃鱼',
         avatar: 'https://feyoudao.oss-cn-hongkong.aliyuncs.com/site/star_field.png',
-        description: '🚀一款个性化的 VuePress2.x 主题✨'
+        description: '🚀https://wiki.moweilong.com/✨'
     },
     homeHeaderImages: [
         {

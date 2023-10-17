@@ -1,16 +1,22 @@
 export default [
     {
-        text: '指南',
-        icon: 'neo-zhinanzhen',
-        link: '/guide/introduce',
-        activeMatch: '^/guide/'
+        text: 'Golang',
+        icon: 'neo-golang',
+        link: '/golang/',
+        activeMatch: '^/golang/'
     },
-    {
-        text: '配置',
-        icon: 'neo-shezhi1',
-        link: '/config/theme/feature',
-        activeMatch: '^/config/'
-    },
+    // {
+    //     text: '指南',
+    //     icon: 'neo-zhinanzhen',
+    //     link: '/guide/introduce',
+    //     activeMatch: '^/guide/'
+    // },
+    // {
+    //     text: '配置',
+    //     icon: 'neo-shezhi1',
+    //     link: '/config/theme/feature',
+    //     activeMatch: '^/config/'
+    // },
     {
         text: '饿了么组件库',
         icon: 'neo-shanchuxian',

@@ -19,9 +19,10 @@ export default {
     '/interview/': 'structure',
     '/utils/': 'structure',
     '/demo/': 'structure',
-    '/guide/': 'structure',
-    '/config/': 'structure',
+    // '/guide/': 'structure',
+    // '/config/': 'structure',
     '/prompt/': 'structure',
+    '/golang/': 'structure',
 }
 
 // '/interview/': [
