@@ -11,7 +11,7 @@ export default neoTheme({
     contributors: false,
     docsDir: 'docs',
     docsBranch: 'master',
-    docsRepo: 'https://github.com/qqlcx5/vuepress-next',
+    docsRepo: 'https://github.com/bugsmo/bugsmo.github.io',
     editLinkPattern: ':repo/edit/:branch/:path',
     sidebarDepth: 0,
     // 主题配置项
@@ -25,7 +25,7 @@ export default neoTheme({
         intro: 'https://github.com/bugsmo',
         roundAvatar: true,
         avatar: 'https://feyoudao.oss-cn-hongkong.aliyuncs.com/site/star_field.png',
-        description: 'いつか、私がヒトじゃなくなっても、この星は燃え尽きることはない。'
+        description: 'Always young, always love.'
     },
     // 文章列表中作者信息
     author: {
@@ -41,7 +41,7 @@ export default neoTheme({
     homeHeaderInfo: {
         name: '老莫不吃鱼',
         avatar: 'https://feyoudao.oss-cn-hongkong.aliyuncs.com/site/star_field.png',
-        description: '🚀https://wiki.moweilong.com/✨'
+        description: '🚀永远年轻，永远热爱✨'
     },
     homeHeaderImages: [
         {
