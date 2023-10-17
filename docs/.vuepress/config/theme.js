@@ -21,7 +21,7 @@ export default neoTheme({
     column: true,
     archive: true,
     blog: {
-        name: 'Star Field',
+        name: '老莫不吃鱼',
         intro: 'https://github.com/bugsmo',
         roundAvatar: true,
         avatar: 'https://feyoudao.oss-cn-hongkong.aliyuncs.com/site/star_field.png',
