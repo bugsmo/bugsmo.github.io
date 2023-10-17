@@ -1,5 +1,11 @@
 export default [
     {
+        text: 'Site Reliability Engineer',
+        icon: 'neo-golang',
+        link: '/sre/',
+        activeMatch: '^/sre/'
+    },
+    {
         text: 'Golang',
         icon: 'neo-golang',
         link: '/golang/',

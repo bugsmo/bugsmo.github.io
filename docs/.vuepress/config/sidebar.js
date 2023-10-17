@@ -23,6 +23,7 @@ export default {
     // '/config/': 'structure',
     '/prompt/': 'structure',
     '/golang/': 'structure',
+    '/sre/': 'structure',
 }
 
 // '/interview/': [
