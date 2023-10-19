@@ -21,9 +21,10 @@ export default {
     '/demo/': 'structure',
     // '/guide/': 'structure',
     // '/config/': 'structure',
-    '/prompt/': 'structure',
+    // '/cilium/': 'structure',
     '/golang/': 'structure',
     '/sre/': 'structure',
+    '/kubernetes/': 'structure',
 }
 
 // '/interview/': [

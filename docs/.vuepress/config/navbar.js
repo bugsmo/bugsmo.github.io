@@ -6,6 +6,12 @@ export default [
         activeMatch: '^/sre/'
     },
     {
+        text: 'Kubernetes',
+        icon: 'neo-golang',
+        link: '/kubernetes/',
+        activeMatch: '^/kubernetes/'
+    },
+    {
         text: 'Golang',
         icon: 'neo-golang',
         link: '/golang/',
@@ -58,12 +64,12 @@ export default [
         link: '/demo/',
         activeMatch: '^/demo/'
     },
-    {
-        text: 'GPT Prompt',
-        icon: 'neo-riqi',
-        link: '/prompt/',
-        activeMatch: '^/prompt/'
-    },
+    // {
+    //     text: 'Cilium',
+    //     icon: 'neo-riqi',
+    //     link: '/cilium/',
+    //     activeMatch: '^/cilium/'
+    // },
     {
         text: '索引',
         icon: 'neo-shaixuan',

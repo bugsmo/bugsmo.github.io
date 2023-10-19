@@ -1,5 +1,5 @@
 ---
-title: 基础设施
+title: Linux
 icon: neo-qq
 catalogue: true
 comment: false
