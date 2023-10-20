@@ -115,42 +115,23 @@ yum -y --enablerepo=elrepo-kernel install kernel-ml
 
 ## 6. 设置 grub2
 
-内核安装好后，需要设置为默认启动选项并重启后才会生效
-
-查看系统上的所有可用内核：
+执行命令查看当前默认内核
 
 ```bash
-sudo awk -F\' '$1=="menuentry " {print i++ " : " $2}' /etc/grub2.cfg
+grub2-editenv list
 ```
 
 输出
 
 ```bash
-
+saved_entry=20191225112704604621358614227964-6.5.7-1.el8.elrepo.x86_64
+kernelopts=root=UUID=e32cfa7a-df48-4031-8fdf-5eec92ee3039 ro crashkernel=auto rhgb quiet net.ifnames=0 console=tty0 console=ttyS0,115200n8 noibrs nvme_core.io_timeout=4294967295
+boot_success=0
 ```
 
-刚刚安装的内核即 ``
+此时系统已将默认内核修改为最新版本，如果是旧版本，可通过命令 `grub2-set-default 0` 手动更改，0 即表示最新安装的内核，最后执行 reboot 重启系统
 
-我们需要把 grub2 默认设置为 0
-
-方法 1：通过 grub2-set-default 0 命令设置
-
-```bash
-grub2-set-default 0
-```
-
-方法 2：编辑 /etc/default/grub 文件，编辑（e）将 GRUB_DEFAULT 设置为 0，
-修改完成后保存退出（：wq）
-
-```bash
-vim /etc/default/grub
-```
-
-## 7. 生成 grub 配置文件并重启
-
-```bash
-grub2-mkconfig -o /boot/grub2/grub.cfg
-```
+## 7. 重启
 
 重启服务器
 
@@ -175,27 +156,35 @@ rpm -qa | grep kernel
 输出
 
 ```bash
-kernel-3.10.0-1160.99.1.el7.x86_64
-kernel-devel-3.10.0-1160.99.1.el7.x86_64
-kernel-3.10.0-957.el7.x86_64
-kernel-tools-libs-3.10.0-1160.99.1.el7.x86_64
-kernel-3.10.0-957.21.3.el7.x86_64
-kernel-tools-3.10.0-1160.99.1.el7.x86_64
-kernel-devel-3.10.0-957.21.3.el7.x86_64
-kernel-ml-6.5.7-1.el7.elrepo.x86_64
-kernel-headers-3.10.0-1160.99.1.el7.x86_64
+kernel-tools-libs-4.18.0-348.7.1.el8_5.x86_64
+kernel-4.18.0-348.7.1.el8_5.x86_64
+kernel-ml-core-6.5.7-1.el8.elrepo.x86_64
+kernel-core-4.18.0-80.el8.x86_64
+kernel-modules-4.18.0-80.11.2.el8_0.x86_64
+kernel-modules-4.18.0-80.el8.x86_64
+kernel-headers-4.18.0-348.7.1.el8_5.x86_64
+kernel-tools-4.18.0-348.7.1.el8_5.x86_64
+kernel-devel-4.18.0-348.7.1.el8_5.x86_64
+kernel-4.18.0-80.el8.x86_64
+kernel-4.18.0-80.11.2.el8_0.x86_64
+kernel-modules-4.18.0-348.7.1.el8_5.x86_64
+kernel-ml-modules-6.5.7-1.el8.elrepo.x86_64
+kernel-core-4.18.0-80.11.2.el8_0.x86_64
+kernel-devel-4.18.0-80.11.2.el8_0.x86_64
+kernel-core-4.18.0-348.7.1.el8_5.x86_64
+kernel-ml-6.5.7-1.el8.elrepo.x86_64
 ```
 
-可选择删除 3.10 版本的内核
+可选择删除 4.18 版本的内核
 
 ```bash
-yum remove kernel-3.10.0*
+yum remove kernel-4.18.0*
 ```
 
 卸载其他内核工具包
 
 ```bash
-yum remove kernel-*-3.10.0*
+yum remove kernel-*-4.18.0*
 ```
 
 会卸载一些对内核 headers 依赖的安装包，比如 gcc、gcc-c++ 之类的。不过不要紧，我们可以在安装完最新版内核 headers 后再重新安装回来即可。
@@ -209,7 +198,7 @@ yum -y --enablerepo=elrepo-kernel install kernel-ml*
 安装 gcc 等
 
 ```bash
-yum install gcc gcc-c++ glibc-devel glibc-headers -y
+yum install gcc gcc-c++ glibc-devel glibc-headers vdo annobin kmod-kvdo libxcrypt-devel -y
 ```
 
 ## 10. 手动下载内核包

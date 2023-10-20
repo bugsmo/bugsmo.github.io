@@ -1,17 +1,17 @@
 ---
-order: 3
-tags: 
+order: 900
+tags:
   - Linux
   - CentOS
   - CentOS8
   - Yum
 title: Failed to download metadata for repo ‘AppStream’ [CentOS]
 date: 2023-10-19 17:30:40
-categories: 
+categories:
   - sre
   - linux
-columns: 
-  - 
+columns:
+  -
 ---
 
 # Failed to download metadata for repo ‘AppStream’ [CentOS]
