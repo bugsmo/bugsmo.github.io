@@ -490,7 +490,7 @@ sudo systemctl enable --now kubelet
 
 ## 5. 高可用配置
 
-keepalive 和 haproxy
+[keepalive 和 haproxy 安装配置](https://www.kubesphere.io/zh/docs/v3.4/installing-on-linux/high-availability-configurations/set-up-ha-cluster-using-keepalived-haproxy/#%E9%85%8D%E7%BD%AE%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1)
 
 ## 6. 初始化集群
 
@@ -526,7 +526,7 @@ kubeadm config print init-defaults > kubeadm-kubeproxy-free.conf
 - kubernetesVersion 字段用来指定我们要安装的 k8s 版本
 - criSocket 从 1.24.0 版本开始已经默认变成了 containerd
 - 修改 etcd 存储路径
-- controlPlaneEndpoint 配置为 slb 的地址端口
+- controlPlaneEndpoint 配置为 虚拟 IP 的地址端口
 - podSubnet、serviceSubnet 和 dnsDomain 两个参数默认情况下可以不用修改，这里我按照自己的需求进行了变更
 
 ```bash

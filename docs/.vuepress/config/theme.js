@@ -10,7 +10,7 @@ export default neoTheme({
     logo: 'https://feyoudao.oss-cn-hongkong.aliyuncs.com/site/favicon.ico',
     contributors: false,
     docsDir: 'docs',
-    docsBranch: 'master',
+    docsBranch: 'main',
     docsRepo: 'https://github.com/bugsmo/bugsmo.github.io',
     editLinkPattern: ':repo/edit/:branch/:path',
     sidebarDepth: 1, // 最大是 2
