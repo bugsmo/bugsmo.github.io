@@ -19,12 +19,19 @@ export default {
     '/interview/': 'structure',
     '/utils/': 'structure',
     '/demo/': 'structure',
-    // '/guide/': 'structure',
-    // '/config/': 'structure',
-    // '/cilium/': 'structure',
+    '/guide/': 'structure',
+    '/config/': 'structure',
+    // 编程相关路由
     '/golang/': 'structure',
-    '/sre/': 'structure',
+    '/ops/': 'structure',
+    // sre 相关路由
     '/kubernetes/': 'structure',
+    '/cilium/': 'structure',
+    '/ssh/': 'structure',
+    '/linux/': 'structure',
+    '/gitlab/': 'structure',
+    '/nginx/': 'structure',
+    '/java/': 'structure',
 }
 
 // '/interview/': [
