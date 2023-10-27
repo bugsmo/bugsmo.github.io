@@ -13,7 +13,7 @@ export default neoTheme({
     docsBranch: 'main',
     docsRepo: 'https://github.com/bugsmo/bugsmo.github.io',
     editLinkPattern: ':repo/edit/:branch/:path',
-    sidebarDepth: 1, // 最大是 2
+    sidebarDepth: 0, // 最大是 2
     // 主题配置项
     bolgCreateAt: '2023-05-12',
     category: true,

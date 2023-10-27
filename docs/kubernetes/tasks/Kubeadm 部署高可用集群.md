@@ -1,14 +1,15 @@
 ---
 order: 1
-tags:
+tags: 
   - k8s安装
 title: Kubeadm 部署高可用集群
 date: 2023-10-19 14:21:49
-categories:
+columns: 
+  - null
+categories: 
+  - sre
   - kubernetes
   - tasks
-columns:
-  -
 ---
 
 # Kubeadm 部署高可用集群

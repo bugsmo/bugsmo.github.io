@@ -10,10 +10,40 @@ export default [
                 activeMatch: '^/kubernetes/'
             },
             {
+                text: 'Docker',
+                icon: 'neo-riqi',
+                link: '/docker/',
+                activeMatch: '^/docker/'
+            },
+            {
                 text: 'Cilium',
                 icon: 'neo-riqi',
                 link: '/cilium/',
                 activeMatch: '^/cilium/'
+            },
+            {
+                text: 'Prometheus',
+                icon: 'neo-riqi',
+                link: '/prometheus/',
+                activeMatch: '^/prometheus/'
+            },
+            {
+                text: 'Alertmanager',
+                icon: 'neo-riqi',
+                link: '/alertmanager/',
+                activeMatch: '^/alertmanager/'
+            },
+            {
+                text: 'Skywalking',
+                icon: 'neo-riqi',
+                link: '/skywalking/',
+                activeMatch: '^/skywalking/'
+            },
+            {
+                text: 'Elasticsearch',
+                icon: 'neo-riqi',
+                link: '/elasticsearch/',
+                activeMatch: '^/elasticsearch/'
             },
             {
                 text: 'Linux',

@@ -23,10 +23,13 @@ export default {
     '/config/': 'structure',
     // 编程相关路由
     '/golang/': 'structure',
-    '/ops/': 'structure',
     // sre 相关路由
     '/kubernetes/': 'structure',
     '/cilium/': 'structure',
+    '/prometheus/': 'structure',
+    '/alertmanager/': 'structure',
+    '/skywalking/': 'structure',
+    '/elasticsearch/': 'structure',
     '/ssh/': 'structure',
     '/linux/': 'structure',
     '/gitlab/': 'structure',
