@@ -15,16 +15,18 @@ export default {
     //     collapsible: false,
     //     children: []
     // },
-    '/el-component/': 'structure',
-    '/interview/': 'structure',
-    '/utils/': 'structure',
-    '/demo/': 'structure',
+
+    // '/interview/': 'structure',
     '/guide/': 'structure',
     '/config/': 'structure',
     // 编程相关路由
     '/golang/': 'structure',
+    '/utils/': 'structure',
+    '/demo/': 'structure',
+    '/el-component/': 'structure',
     // sre 相关路由
     '/kubernetes/': 'structure',
+    '/docker/': 'structure',
     '/cilium/': 'structure',
     '/prometheus/': 'structure',
     '/alertmanager/': 'structure',

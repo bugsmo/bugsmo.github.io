@@ -1,14 +1,14 @@
 ---
-order: 1
-tags:
+order: 101
+tags: 
   - es-operator
   - zalando
-title: zalando es-operator 快速入门
 date: 2023-10-26 10:48:04
-categories:
+categories: 
   - elasticsearch
-columns:
-  -
+columns: 
+  - null
+title: zalando 的 es-operator 的自动缩放
 ---
 
 # zalando 的 es-operator 的自动缩放

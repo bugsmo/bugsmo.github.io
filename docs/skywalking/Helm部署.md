@@ -19,6 +19,25 @@ columns:
 - 安装 helm3
 - 安装 k8s
 
+## 容器时区配置
+
+容器使用的时区不是东八区
+
+```dockerfile
+FROM skywalking.docker.scarf.sh/apache/skywalking-oap-server:9.2.0
+ENV TZ=Asia/Shanghai
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
+    echo $TZ > /etc/timezone
+```
+
+构建镜像
+
+```bash
+docker build -t harbor.dev.cn/library/skywalking-oap-server:9.2.0 .
+
+docker push harbor.dev.cn/library/skywalking-oap-server:9.2.0
+```
+
 ## 基于已有 es 安装
 
 ### helm 下载 skywalking

@@ -1,13 +1,13 @@
 ---
-order: 2
-tags: 
+order: 50
+tags:
   - elasticsearch
 title: ES 的 shard&replica 机制
 date: 2023-10-27 09:22:33
-categories: 
+categories:
   - elasticsearch
-columns: 
-  - 
+columns:
+  -
 ---
 
 # ES 的 shard&replica 机制
