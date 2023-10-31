@@ -1,16 +1,17 @@
 ---
 title: flattenDeep 指定层级扁平化数组 sticky 6
 date: 2022-06-15 17:20:46
-categories: 
+categories:
   - utils
   - Array
   - flattenDeep
-tags: 
+tags:
   - flattenDeep
-sticky: 6
-columns: 
-  - 
+# sticky: 6
+columns:
+  -
 ---
+
 # flattenDeep 指定层级扁平化数组
 
 将多层嵌套数组（array）拆分成指定层级数组.
@@ -22,14 +23,19 @@ columns:
 **例子**
 
 ```js
-flattenDeep([1, [2, [3, [4]], 5]], 1)
+flattenDeep([1, [2, [3, [4]], 5]], 1);
 // => [1, 2, [3, [4]], 5]
 ```
 
 **源码**
 
 ```js
-const flattenDeep = (arr, depth = 1) => arr.reduce((a, v) => a.concat(depth > 1 && Array.isArray(v) ? flatten(v, depth - 1) : v), [])
+const flattenDeep = (arr, depth = 1) =>
+  arr.reduce(
+    (a, v) =>
+      a.concat(depth > 1 && Array.isArray(v) ? flatten(v, depth - 1) : v),
+    []
+  );
 
 // ES6方法 `flat(depth)`
 // [1, [2, [3, [4]], 5]].flat(1)

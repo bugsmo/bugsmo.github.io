@@ -1,15 +1,15 @@
 ---
 title: min 数组中最大值 sticky 10
 date: 2022-06-15 17:20:46
-categories: 
+categories:
   - utils
   - Array
   - min
-tags: 
+tags:
   - min
-sticky: 10
-columns: 
-  - 
+# sticky: 10
+columns:
+  -
 ---
 
 # min 数组中最大值
@@ -17,7 +17,7 @@ columns:
 过滤原数组中所有的非假值元素，返回数组中的最小值
 
 ```js
-min(array)
+min(array);
 ```
 
 **参数**
@@ -27,12 +27,12 @@ min(array)
 **例子**
 
 ```js
-min([0, -1, -2, -3, false])
+min([0, -1, -2, -3, false]);
 // => -3
 ```
 
 **源码**
 
 ```js
-const min = arr => Math.min(...arr.filter(v => Boolean(v) || v === 0))
+const min = (arr) => Math.min(...arr.filter((v) => Boolean(v) || v === 0));
 ```

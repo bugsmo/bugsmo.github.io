@@ -1,15 +1,16 @@
 ---
 title: clone 拷贝数组 sticky 2
 date: 2022-06-15 17:20:46
-categories: 
+categories:
   - utils
   - Array
-tags: 
+tags:
   - clone
-sticky: 2
-columns: 
-  - 
+# sticky: 2
+columns:
+  -
 ---
+
 # clone 拷贝数组
 
 浅拷贝一份数组副本
@@ -21,7 +22,7 @@ columns:
 **例子**
 
 ```js
-clone([1, 24])
+clone([1, 24]);
 // => [1, 24]
 ```
 
@@ -29,16 +30,16 @@ clone([1, 24])
 
 ```js
 // ES6 ...
-const clone = arr => [...arr]
+const clone = (arr) => [...arr];
 
 // ES6 Array.from
-const clone = arr => Array.from(arr)
+const clone = (arr) => Array.from(arr);
 
 // concat()
-const clone = arr => [].concat(arr)
+const clone = (arr) => [].concat(arr);
 
 // map()
-const clone = arr => arr.map(x => x)
+const clone = (arr) => arr.map((x) => x);
 
-clone([1, 24]) // [1, 24]
+clone([1, 24]); // [1, 24]
 ```

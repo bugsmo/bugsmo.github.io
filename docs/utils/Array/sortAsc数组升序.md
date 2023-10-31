@@ -1,16 +1,17 @@
 ---
 title: sortAsc 数组升序 sticky 13
 date: 2022-06-15 17:20:46
-categories: 
+categories:
   - utils
   - Array
   - sortAsc
-tags: 
+tags:
   - sortAsc
-sticky: 13
-columns: 
-  - 
+# sticky: 13
+columns:
+  -
 ---
+
 # sortAsc 数组升序
 
 返回升序后的新数组
@@ -18,7 +19,7 @@ columns:
 > sort()方法会改变原数组，默认按 unicode 码顺序排列
 
 ```js
-sortAsc(array)
+sortAsc(array);
 ```
 
 **参数**
@@ -28,7 +29,7 @@ sortAsc(array)
 **例子**
 
 ```js
-sortAsc([3, 2, 3, 4, 1])
+sortAsc([3, 2, 3, 4, 1]);
 // => [ 1, 2, 3, 3, 4 ]
 ```
 
@@ -36,5 +37,5 @@ sortAsc([3, 2, 3, 4, 1])
 
 ```js
 // 通过ES6 ...展开运算符浅拷贝一份新数组
-const sortAsc = arr => [...arr].sort((a, b) => a - b)
+const sortAsc = (arr) => [...arr].sort((a, b) => a - b);
 ```

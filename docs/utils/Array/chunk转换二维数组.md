@@ -1,15 +1,16 @@
 ---
 title: chunk 拆分数组 sticky 1
 date: 2022-10-15 17:20:46
-categories: 
+categories:
   - utils
   - Array
-tags: 
+tags:
   - Array
-sticky: 1
-columns: 
-  - 
+# sticky: 1
+columns:
+  -
 ---
+
 # chunk 拆分数组
 
 将数组（array）拆分成多个子数组，并将这些子数组组成一个新数组。
@@ -34,12 +35,12 @@ chunk(['a', 'b', 'c', 'd'], 3)
 
 ```js
 function chunk(array, count = 8) {
-    let pages = []
-    array.forEach((item, index) => {
-        const page = Math.floor(index / count)
-        if (!pages[page]) pages[page] = []
-        pages[page].push(item)
-    })
-    return pages
+  let pages = [];
+  array.forEach((item, index) => {
+    const page = Math.floor(index / count);
+    if (!pages[page]) pages[page] = [];
+    pages[page].push(item);
+  });
+  return pages;
 }
 ```

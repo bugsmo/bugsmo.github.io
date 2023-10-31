@@ -50,7 +50,7 @@ export default [
   //     selector: ':not(a) > img:not(.no-zoom)'
   // }),
   sitemapPlugin({
-    hostname: "neo.feyoudao.cn",
+    hostname: "wiki.moweilong.com",
   }),
   mdEnhancePlugin({
     tabs: true, // 添加选项卡支持

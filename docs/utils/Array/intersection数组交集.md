@@ -1,16 +1,17 @@
 ---
 title: intersection 两个数组中的集合 sticky 7
 date: 2022-06-15 17:20:46
-categories: 
+categories:
   - utils
   - Array
   - intersection
-tags: 
+tags:
   - intersection
-sticky: 7
-columns: 
-  - 
+# sticky: 7
+columns:
+  -
 ---
+
 # intersection 两个数组中的集合
 
 创建一个共有的`array`值的数组，每个值包含在其他给定的数组中。
@@ -23,7 +24,7 @@ columns:
 **例子**
 
 ```js
-intersection([1, 2, 6, 7], [1, 2, 9, 5])
+intersection([1, 2, 6, 7], [1, 2, 9, 5]);
 // => [ 1, 2 ]
 ```
 
@@ -31,9 +32,9 @@ intersection([1, 2, 6, 7], [1, 2, 9, 5])
 
 ```js
 const intersection = (a, b) => {
-    const s = new Set(b)
-    return a.filter(x => s.has(x))
-}
+  const s = new Set(b);
+  return a.filter((x) => s.has(x));
+};
 // ES6 includes
-const intersection = (arr, values) => arr.filter(v => values.includes(v))
+const intersection = (arr, values) => arr.filter((v) => values.includes(v));
 ```

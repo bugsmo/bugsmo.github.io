@@ -1,7 +1,7 @@
 export default [
      {
         text: 'Site Reliability Engineer',
-        icon: 'neo-ins',
+        icon: 'neo-shezhi1',
         children: [
             {
                 text: 'Kubernetes',
@@ -79,7 +79,7 @@ export default [
     },
     {
         text: '编程',
-        icon: 'neo-ins',
+        icon: 'neo-zhinanzhen',
         children: [
             {
                 text: 'Golang',

@@ -1,16 +1,17 @@
 ---
 title: difference 两个数组中不包含集合 sticky 4
 date: 2022-10-13 17:20:46
-categories: 
+categories:
   - utils
   - Array
   - difference
-tags: 
+tags:
   - difference
-sticky: 4
-columns: 
-  - 
+# sticky: 4
+columns:
+  -
 ---
+
 # difference 两个数组中不包含集合
 
 创建一个具有唯一`array`值的数组，每个值不包含在其他给定的数组中。
@@ -27,7 +28,7 @@ columns:
 **例子**
 
 ```js
-difference([1, 2, 6, 7], [1, 2, 9, 5])
+difference([1, 2, 6, 7], [1, 2, 9, 5]);
 // => [ 6, 7 ]
 ```
 
@@ -35,8 +36,8 @@ difference([1, 2, 6, 7], [1, 2, 9, 5])
 
 ```js
 const difference = (a, b) => {
-  const s = new Set(b)
-  let arr = a.filter(x => !s.has(x))
-  return arr
-}
+  const s = new Set(b);
+  let arr = a.filter((x) => !s.has(x));
+  return arr;
+};
 ```
