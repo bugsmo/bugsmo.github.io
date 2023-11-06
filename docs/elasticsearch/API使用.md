@@ -16,7 +16,7 @@ columns:
 
 本文示例以 ElasticSearch 7.10.2 版本搭建了 demo 集群来演示，更详细的 API 参数及用法请参考官方文档。测试命令我用的是 Kibana，在输入时会有命令和语法错误提示，可直接复制 CURL 格式、格式化、查看文档，点击导航栏上面的 help，也提供了一些快捷方式，方便学习。
 
-![dev tools](https://raw.githubusercontent.com/kalandramo/picgo/main/img/20231031150625.png)
+![dev tools](https://assets.moweilong.com/img/20231031150625.png)
 
 API 测试参考：
 

@@ -14,7 +14,7 @@ columns:
 
 ## 架构图
 
-![ES 架构图](https://raw.githubusercontent.com/kalandramo/picgo/main/img/20231027174636.png)
+![ES 架构图](https://assets.moweilong.com/img/20231027174636.png)
 
 ## 集群
 
@@ -87,7 +87,7 @@ GET /_cluster/health
 
 如果我们启动了一个单独的节点，里面不包含任何的数据和索引，那我们的集群看起来如下图：
 
-![ES master](https://raw.githubusercontent.com/kalandramo/picgo/main/img/20231027174705.png)
+![ES master](https://assets.moweilong.com/img/20231027174705.png)
 
 当一个节点被选举成为 主节点 时，它将负责管理集群范围内的所有变更，例如增加、删除索引，或者增加、删除节点等。当一个节点被选举成为 主节点 时，它将负责管理集群范围内的所有变更，例如增加、删除索引，或者增加、删除节点等。而主节点并不需要涉及到文档级别的变更和搜索等操作，所以当集群只拥有一个主节点的情况下，即使流量的增加它也不会成为瓶颈。任何节点都可以成为主节点。
 
@@ -107,7 +107,7 @@ PUT /blogs
 }
 ```
 
-![ES 单节点](https://raw.githubusercontent.com/kalandramo/picgo/main/img/20231027174713.png)
+![ES 单节点](https://assets.moweilong.com/img/20231027174713.png)
 
 查看集群健康：
 
@@ -142,7 +142,7 @@ GET /_cluster/health
 
 如果启动了第二个节点，我们的集群将会如下所示：
 
-![ES 追加节点](https://raw.githubusercontent.com/kalandramo/picgo/main/img/20231027174724.png)
+![ES 追加节点](https://assets.moweilong.com/img/20231027174724.png)
 
 当第二个节点加入到集群后，3 个 副本分片 将会分配到这个节点上——每个主分片对应一个副本分片。 这意味着当集群内任何一个节点出现问题时，我们的数据都完好无损。
 
@@ -175,7 +175,7 @@ GET /_cluster/health
 
 当启动了第三个节点，我们的集群将会看起来如下所示：
 
-![ES 水平扩容之扩容节点](https://raw.githubusercontent.com/kalandramo/picgo/main/img/20231027174732.png)
+![ES 水平扩容之扩容节点](https://assets.moweilong.com/img/20231027174732.png)
 
 Node 1 和 Node 2 上各有一个分片被迁移到了新的 Node 3 节点，现在每个节点上都拥有 2 个分片，而不是之前的 3 个。 这表示每个节点的硬件资源（CPU, RAM, I/O）将被更少的分片所共享，每个分片的性能将会得到提升。
 
@@ -198,7 +198,7 @@ PUT /blogs/_settings
 
 []()
 
-![ES 水平扩容之扩容副本分片](https://raw.githubusercontent.com/kalandramo/picgo/main/img/20231027174741.png)
+![ES 水平扩容之扩容副本分片](https://assets.moweilong.com/img/20231027174741.png)
 
 ::: tip
 当然，如果只是在相同节点数目的集群上增加更多的副本分片并不能提高性能，因为每个分片从节点上获得的资源会变少。 你需要增加更多的硬件资源来提升吞吐量。
@@ -210,7 +210,7 @@ PUT /blogs/_settings
 
 我们之前说过 Elasticsearch 可以应对节点故障，接下来让我们尝试下这个功能。 如果我们关闭第一个节点，这时集群的状态如下：
 
-![ES 应对故障](https://raw.githubusercontent.com/kalandramo/picgo/main/img/20231027174845.png)
+![ES 应对故障](https://assets.moweilong.com/img/20231027174845.png)
 
 我们关闭的节点是一个主节点。而集群必须拥有一个主节点来保证正常工作，所以发生的第一件事情就是选举一个新的主节点： Node 2 。
 
@@ -307,7 +307,7 @@ ES 中的 mapping 有点类似与关系数据库中 表结构 的概念，在 My
 
 在我们创建索引的时候并不需要设置 mapping，是因为 ES 的映射有自己的默认的映射类型，参考下图：
 
-![ES 映射类型](https://raw.githubusercontent.com/kalandramo/picgo/main/img/20231027174853.png)
+![ES 映射类型](https://assets.moweilong.com/img/20231027174853.png)
 
 ### Routing
 
@@ -331,7 +331,7 @@ routing 是一个可变值，默认是文档的 \_id ，也可以设置成一个
 
 假设有一个集群由三个节点组成。 它包含一个叫 blogs 的索引，有两个主分片，每个主分片有两个副本分片。相同分片的副本不会放在同一节点，如下图：
 
-![ES 主分片和副本分片如何交互](https://raw.githubusercontent.com/kalandramo/picgo/main/img/20231027174900.png)
+![ES 主分片和副本分片如何交互](https://assets.moweilong.com/img/20231027174900.png)
 
 我们可以发送请求到集群中的任一节点。 每个节点都有能力处理任意请求。 每个节点都知道集群中任一文档位置，所以可以直接将请求转发到需要的节点上。 在下面的例子中，将所有的请求发送到 Node 1 ，我们将其称为 协调节点(coordinating node) 。
 
@@ -343,7 +343,7 @@ routing 是一个可变值，默认是文档的 \_id ，也可以设置成一个
 
 索引和删除请求都是写操作， 必须在主分片上面完成之后才能被复制到相关的副本分片，如下图所示：
 
-![ES 索引和删除文档](https://raw.githubusercontent.com/kalandramo/picgo/main/img/20231027174907.png)
+![ES 索引和删除文档](https://assets.moweilong.com/img/20231027174907.png)
 以下是在主副分片和任何副本分片上面 成功索引和删除文档所需要的步骤顺序：
 
 1. 客户端向 Node1 发送新建、索引或者删除请求。
@@ -356,7 +356,7 @@ routing 是一个可变值，默认是文档的 \_id ，也可以设置成一个
 
 可以从主分片或者从其它任意副本分片检索文档 ，如下图所示：
 
-![ES 取回文档](https://raw.githubusercontent.com/kalandramo/picgo/main/img/20231027175019.png)
+![ES 取回文档](https://assets.moweilong.com/img/20231027175019.png)
 
 以下是从主分片或者副本分片检索文档的步骤顺序：
 
@@ -372,7 +372,7 @@ routing 是一个可变值，默认是文档的 \_id ，也可以设置成一个
 
 update API 结合了先前说明的读取和写入模式，如下图：
 
-![ES 局部更新文档](https://raw.githubusercontent.com/kalandramo/picgo/main/img/20231027175024.png)
+![ES 局部更新文档](https://assets.moweilong.com/img/20231027175024.png)
 
 以下是部分更新一个文档的步骤：
 
@@ -393,7 +393,7 @@ ES 提供了两个批量操作的 API：mget 和 bulk API，类似于单文档�
 
 协调节点一旦收到来自每个节点的应答，就将每个节点的响应收集整理成单个响应，返回给客户端，如下图所示。
 
-![ES mget 取回多个文档](https://raw.githubusercontent.com/kalandramo/picgo/main/img/20231027175030.png)
+![ES mget 取回多个文档](https://assets.moweilong.com/img/20231027175030.png)
 
 以下是使用单个 mget 请求取回多个文档所需的步骤顺序：
 
@@ -405,7 +405,7 @@ ES 提供了两个批量操作的 API：mget 和 bulk API，类似于单文档�
 
 bulk API：允许在单个批量请求中执行多个创建、索引、删除和更新请求，如下图所示：
 
-![ES bulk 修改多个文档](https://raw.githubusercontent.com/kalandramo/picgo/main/img/20231027175057.png)
+![ES bulk 修改多个文档](https://assets.moweilong.com/img/20231027175057.png)
 
 bulk API 按如下步骤顺序执行：
 
