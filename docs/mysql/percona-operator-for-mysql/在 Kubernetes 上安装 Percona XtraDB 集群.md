@@ -1,10 +1,10 @@
 ---
 order: 499
-tags: 
+tags:
   - percona-operator-for-mysql
-categories: 
+categories:
   - mysql
-columns: 
+columns:
   - null
 title: 在 Kubernetes 上安装 Percona XtraDB 集群
 date: 2023-11-10 09:43:45
@@ -136,4 +136,105 @@ mysql> show databases;
 | sys                |
 +--------------------+
 4 rows in set (0.01 sec)
+```
+
+## 自定义配置
+
+- `proxy service` 是否需要自动创建为无头服务类型，默认是 `clusterIP`。
+- 是否关闭 `遥测` 功能。
+- 日志收集
+- 数据备份
+
+### 日志收集到 ES
+
+`logcollector.configuration` 配置参考如下：
+
+```yaml
+apiVersion: pxc.percona.com/v1
+kind: PerconaXtraDBCluster
+metadata:
+  name: cluster1
+......
+  logcollector:
+    enabled: true
+    configuration: |
+      [SERVICE]
+           Flush        1
+           Log_Level    error
+           Daemon       off
+           parsers_file parsers_multiline.conf
+
+      [INPUT]
+           Name             tail
+           Path             ${LOG_DATA_DIR}/mysqld-error.log
+           Tag              ${POD_NAMESPASE}.${POD_NAME}.mysqld-error.log
+           Mem_Buf_Limit    5MB
+           Refresh_Interval 5
+           DB               /tmp/flb_kube.db
+           multiline.parser multiline-regex-test
+           read_from_head   true
+           Path_Key         file
+
+      [INPUT]
+           Name             tail
+           Path             ${LOG_DATA_DIR}/wsrep_recovery_verbose.log
+           Tag              ${POD_NAMESPASE}.${POD_NAME}.wsrep_recovery_verbose.log
+           Mem_Buf_Limit    5MB
+           Refresh_Interval 5
+           DB               /tmp/flb_kube.db
+           multiline.parser multiline-regex-test
+           read_from_head   true
+           Path_Key         file
+
+      [INPUT]
+           Name             tail
+           Path             ${LOG_DATA_DIR}/innobackup.prepare.log
+           Tag              ${POD_NAMESPASE}.${POD_NAME}.innobackup.prepare.log
+           Refresh_Interval 5
+           DB               /tmp/flb_kube.db
+           multiline.parser multiline-regex-test
+           read_from_head   true
+           Path_Key         file
+
+      [INPUT]
+           Name             tail
+           Path             ${LOG_DATA_DIR}/innobackup.move.log
+           Tag              ${POD_NAMESPASE}.${POD_NAME}.innobackup.move.log
+           Refresh_Interval 5
+           DB               /tmp/flb_kube.db
+           multiline.parser multiline-regex-test
+           read_from_head   true
+           Path_Key         file
+
+      [INPUT]
+           Name             tail
+           Path             ${LOG_DATA_DIR}/innobackup.backup.log
+           Tag              ${POD_NAMESPASE}.${POD_NAME}.innobackup.backup.log
+           Refresh_Interval 5
+           DB               /tmp/flb_kube.db
+           multiline.parser multiline-regex-test
+           read_from_head   true
+           Path_Key         file
+
+      [INPUT]
+           Name             tail
+           Path             ${LOG_DATA_DIR}/mysqld.post.processing.log
+           Tag              ${POD_NAMESPASE}.${POD_NAME}.mysqld.post.processing.log
+           Refresh_Interval 5
+           DB               /tmp/flb_kube.db
+           multiline.parser multiline-regex-test
+           read_from_head   true
+           Path_Key         file
+
+      [OUTPUT]
+           Name  es
+           Match *
+           Host  es-http
+           Port  9200
+           Index percona-xtradb-cluster
+           Type  doc
+    resources:
+      requests:
+        memory: 100M
+        cpu: 200m
 ```

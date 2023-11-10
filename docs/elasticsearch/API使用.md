@@ -1,7 +1,7 @@
 ---
 order: 3
 tags:
-  - elasticsearch
+  - elasticsearch基础
 title: API 使用
 date: 2023-10-30 16:41:56
 categories:

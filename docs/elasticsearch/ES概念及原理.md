@@ -1,7 +1,7 @@
 ---
 order: 1
 tags:
-  - elasticsearch
+  - elasticsearch基础
 title: ES 概念及原理
 date: 2023-10-27 15:31:08
 categories:
