@@ -30,6 +30,7 @@ export default {
     '/cilium/': 'structure',
     '/prometheus/': 'structure',
     '/alertmanager/': 'structure',
+    '/mysql/': 'structure',
     '/skywalking/': 'structure',
     '/elasticsearch/': 'structure',
     '/ssh/': 'structure',

@@ -34,6 +34,12 @@ export default [
                 activeMatch: '^/alertmanager/'
             },
             {
+                text: 'MySQL',
+                icon: 'neo-riqi',
+                link: '/mysql/',
+                activeMatch: '^/mysql/'
+            },
+            {
                 text: 'Skywalking',
                 icon: 'neo-riqi',
                 link: '/skywalking/',

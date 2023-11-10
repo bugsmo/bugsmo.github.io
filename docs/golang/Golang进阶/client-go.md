@@ -1,6 +1,13 @@
 ---
-tags:
+tags: 
   - client-go
+title: client-go 包
+date: 2023-10-31 17:36:18
+categories: 
+  - golang
+  - Golang进阶
+columns: 
+  - 
 ---
 
 # client-go 包

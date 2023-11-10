@@ -1,8 +1,14 @@
 ---
 order: 998
-tags:
+tags: 
   - java
   - jasperreport
+title: jasperreport 生成 pdf 报错
+date: 2023-11-03 11:04:45
+categories: 
+  - java
+columns: 
+  - 
 ---
 
 # jasperreport 生成 pdf 报错

@@ -1,7 +1,13 @@
 ---
 order: 2
-tags:
+tags: 
   - gitlab
+title: Prometheus 设置
+date: 2023-10-31 16:39:31
+categories: 
+  - gitlab
+columns: 
+  - 
 ---
 
 # Prometheus 设置
