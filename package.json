@@ -8,20 +8,28 @@
         "docs:build": "vuepress build docs --clean-cache"
     },
     "devDependencies": {
-        "@vuepress/plugin-docsearch": "v2.0.0-beta.67",
-        "@vuepress/plugin-google-analytics": "v2.0.0-beta.67",
-        "@vuepress/plugin-register-components": "v2.0.0-beta.67",
-        "@vuepress/plugin-search": "v2.0.0-beta.67",
+        "@vuepress/plugin-docsearch": "v2.0.0-beta.68",
+        "@vuepress/plugin-google-analytics": "v2.0.0-beta.68",
+        "@vuepress/plugin-register-components": "v2.0.0-beta.68",
+        "@vuepress/plugin-search": "v2.0.0-beta.68",
         "@vueuse/core": "10.2.1",
-        "vuepress": "v2.0.0-beta.67",
-        "vuepress-plugin-comment2": "2.0.0-beta.236",
-        "vuepress-plugin-copy-code2": "2.0.0-beta.236",
-        "vuepress-plugin-md-enhance": "2.0.0-beta.236",
-        "vuepress-plugin-sitemap2": "2.0.0-beta.236",
-        "vuepress-theme-hope": "^2.0.0-beta.236",
+        "mathjax-full": "^3.2.2",
+        "reveal.js": "^5.0.2",
+        "vuepress": "v2.0.0-beta.68",
+        "vuepress-plugin-comment2": "2.0.0-beta.250",
+        "vuepress-plugin-copy-code2": "2.0.0-beta.250",
+        "vuepress-plugin-md-enhance": "^2.0.0-beta.250",
+        "vuepress-plugin-sitemap2": "2.0.0-beta.250",
+        "vuepress-theme-hope": "^2.0.0-beta.250",
         "vuepress-theme-neo": "^2.0.0-beta.73"
     },
     "license": "MIT",
     "author": "feyoudao.cn",
-    "main": "index.js"
+    "main": "index.js",
+    "dependencies": {
+        "katex": "^0.16.9",
+        "mathjax": "^3.2.2",
+        "reveal": "^0.0.4",
+        "twikoo": "^1.6.22"
+    }
 }

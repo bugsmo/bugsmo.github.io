@@ -59,11 +59,11 @@ export default [
     imgSize: true, // 启用图片大小
     include: true, // 启用导入支持
     demo: true, // 启用代码演示
-    presentation: true, // 启用幻灯片
+    revealJs: true, // 启用幻灯片
     container: true, // 启用自定义容器
     // 使用 KaTeX 启用 TeX 支持
     katex: true,
     // 使用 mathjax 启用 TeX 支持
-    mathjax: true,
+    // mathjax: true,
   }),
 ];
