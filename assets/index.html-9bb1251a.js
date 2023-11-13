@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-21e54510","path":"/kubernetes/","title":"Kubernetes","lang":"zh-CN","frontmatter":{"title":"Kubernetes","icon":"neo-qq","catalogue":true,"comment":false},"headers":[],"git":{"updatedTime":1697710354000},"filePathRelative":"kubernetes/README.md"}');export{e as data};

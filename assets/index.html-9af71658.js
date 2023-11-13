@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7630e300","path":"/golang/","title":"Golang笔记","lang":"zh-CN","frontmatter":{"title":"Golang笔记","icon":"neo-qq","catalogue":true,"comment":false},"headers":[],"git":{"updatedTime":1697512355000},"filePathRelative":"golang/README.md"}');export{e as data};

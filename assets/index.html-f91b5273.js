@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-37cf036a","path":"/elasticsearch/","title":"Elasticsearch","lang":"zh-CN","frontmatter":{"title":"Elasticsearch","icon":"neo-qq","catalogue":true,"comment":false},"headers":[],"git":{"updatedTime":1698375987000},"filePathRelative":"elasticsearch/README.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-34f75852","path":"/rancher/","title":"Rancher","lang":"zh-CN","frontmatter":{"title":"Rancher","icon":"neo-qq","catalogue":true,"comment":false},"headers":[],"git":{"updatedTime":1698736970000},"filePathRelative":"rancher/README.md"}');export{e as data};

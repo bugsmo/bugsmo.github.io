@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-6c6959fb","path":"/gitlab/","title":"Gitlab","lang":"zh-CN","frontmatter":{"title":"Gitlab","icon":"neo-qq","catalogue":true,"comment":false},"headers":[],"git":{"updatedTime":1698203387000},"filePathRelative":"gitlab/README.md"}');export{t as data};

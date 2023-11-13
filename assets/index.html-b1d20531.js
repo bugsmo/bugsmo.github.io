@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-ebffa11e","path":"/kubernetes/tasks/","title":"任务","lang":"zh-CN","frontmatter":{"title":"任务","icon":"neo-qq","catalogue":true,"comment":false,"order":1},"headers":[],"git":{"updatedTime":1697710354000},"filePathRelative":"kubernetes/tasks/README.md"}');export{e as data};
