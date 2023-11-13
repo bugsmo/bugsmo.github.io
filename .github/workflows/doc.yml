@@ -33,7 +33,7 @@ jobs:
       # 如果缓存没有命中，安装依赖
       - name: Install dependencies
         # if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: npm install
+        run: npm install --legacy-peer-deps
         # run: yarn --frozen-lockfile
 
       # 运行构建脚本
@@ -93,6 +93,7 @@ jobs:
       #     gitee-repo: qqlcx5/vuepress-next
       #     # 要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）
       #     branch: dev
+
 # name: Deploy to GitHub Pages
 
 # on:
