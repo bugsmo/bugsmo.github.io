@@ -31,6 +31,9 @@ export default {
     '/prometheus/': 'structure',
     '/alertmanager/': 'structure',
     '/mysql/': 'structure',
+    '/ansible/': 'structure',
+    '/jumpserver/': 'structure',
+    '/minio/': 'structure',
     '/skywalking/': 'structure',
     '/elasticsearch/': 'structure',
     '/ssh/': 'structure',
@@ -38,6 +41,8 @@ export default {
     '/gitlab/': 'structure',
     '/nginx/': 'structure',
     '/java/': 'structure',
+    // k8s
+    '/k8s-concepts/': 'structure',
 }
 
 // '/interview/': [

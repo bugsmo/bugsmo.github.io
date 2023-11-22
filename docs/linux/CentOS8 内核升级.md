@@ -131,7 +131,11 @@ boot_success=0
 
 此时系统已将默认内核修改为最新版本，如果是旧版本，可通过命令 `grub2-set-default 0` 手动更改，0 即表示最新安装的内核，最后执行 reboot 重启系统
 
-## 7. 重启
+## 7. 生成 grub 配置文件并重启
+
+```bash
+grub2-mkconfig -o /boot/grub2/grub.cfg
+```
 
 重启服务器
 

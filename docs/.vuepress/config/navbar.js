@@ -40,6 +40,24 @@ export default [
                 activeMatch: '^/mysql/'
             },
             {
+                text: 'Ansible',
+                icon: 'neo-riqi',
+                link: '/ansible/',
+                activeMatch: '^/ansible/'
+            },
+            {
+                text: 'Jumpserver',
+                icon: 'neo-riqi',
+                link: '/jumpserver/',
+                activeMatch: '^/jumpserver/'
+            },
+            {
+                text: 'Minio',
+                icon: 'neo-riqi',
+                link: '/minio/',
+                activeMatch: '^/minio/'
+            },
+            {
                 text: 'Skywalking',
                 icon: 'neo-riqi',
                 link: '/skywalking/',
@@ -81,6 +99,48 @@ export default [
                 link: '/java/',
                 activeMatch: '^/java/'
             }
+        ]
+    },
+    {
+        text: 'K8s',
+        icon: 'neo-shaixuan',
+        children: [
+            {
+                text: '概念',
+                icon: 'neo-linkedin',
+                link: '/k8s-concepts/',
+                activeMatch: '/k8s-concepts/'
+            },
+            {
+                text: '归档',
+                icon: 'neo-github',
+                link: '/archives/',
+                activeMatch: '/archives/'
+            },
+            {
+                text: '分类',
+                icon: 'neo-momo',
+                link: '/categories/',
+                activeMatch: '/categories/'
+            },
+            {
+                text: '专栏',
+                icon: 'neo-ins',
+                link: '/columns/',
+                activeMatch: '/columns/'
+            },
+            {
+                text: '指南',
+                icon: 'neo-zhinanzhen',
+                link: '/guide/introduce',
+                activeMatch: '^/guide/'
+            },
+            {
+                text: '配置',
+                icon: 'neo-shezhi1',
+                link: '/config/theme/feature',
+                activeMatch: '^/config/'
+            },
         ]
     },
     {
